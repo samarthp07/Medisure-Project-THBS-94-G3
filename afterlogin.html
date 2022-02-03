@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>medisure.com</title>
+    <style>
+        html {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #navbar {
+            /* position: fixed; */
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(34, 161, 155);
+            list-style: none;
+            color: rgb(15, 15, 15);
+            border: 2px solid rgb(17, 17, 17);
+            height: 100px;
+            width: 100%;
+            padding: 10px;
+            padding-bottom: 0px;
+            text-align: center;
+        }
+
+        ul {
+            align-content: center;
+            display: flex;
+            flex-direction: row;
+        }
+
+        li {
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            margin: 10px;
+            text-decoration: none;
+            list-style: none;
+            color: black;
+        }
+
+        #navbar ul input {
+            float: left;
+            align-self: center;
+        }
+
+        #sec1 {
+            background-image: url('bgforpart1.jpg');
+            padding-top: 0%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: scroll;
+            background-size: cover;
+            height: 500px;
+            width: 100%;
+            /* border: 2px solid red; */
+            content: "";
+            text-decoration: none;
+            /* opacity: 0.5; */
+            align-content: center;
+            color: black;
+        }
+
+        #sec2 {
+            margin-top: 0%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: blanchedalmond;
+            color: black;
+        }
+
+        #btn {
+            color: gray;
+            border-radius: 5px;
+        }
+
+        p {
+            color: black;
+            align-content: center;
+            font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 25px;
+            margin: 10px;
+        }
+
+        #head2 {
+            text-align: center;
+            align-content: center;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #inp {
+            height: 25px;
+            padding: 20px;
+        }
+
+        #btn {
+            height: 25px;
+            padding: 10px;
+        }
+
+        footer {
+            width: 100%;
+            height: 100%;
+            background-color: gray;
+            /* border: 2px solid pink; */
+            padding: 30px;
+        }
+
+        img {
+            height: 50px;
+            width: 50px;
+        }
+
+        #sec3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            height: 300px;
+            width: 100%;
+        }
+
+        #logo1 {
+            /* order: 2; */
+            /* flex-grow: 3;
+            flex-shrink: 4; */
+            /* flex-basis: 100px; */
+            padding: 20px;
+            margin: 80px;
+            /* border: 2px solid blue; */
+        }
+
+        #logo2 {
+            /* order: 4; */
+            /* border: 2px solid blue; */
+            /* flex-basis: 200px; */
+            padding: 20px;
+            margin: 80px;
+        }
+
+        #logo3 {
+            padding: 20px;
+            margin: 80px;
+            /* border: 2px solid blue; */
+        }
+
+        .foottxt {
+            color: white;
+            align-content: center;
+            text-align: center;
+        }
+
+        #para {
+            color: black;
+            align-items: centers;
+            margin-left: 200px;
+        }
+
+        .inp {
+            align-self: left;
+        }
+
+        .inp {
+            margin: 10px;
+            justify-content: left;
+            align-self: left;
+        }
+
+        #navbar ul li img {
+            border-radius: 6px;
+        }
+
+        #navbar div {
+            flex-direction: column-reverse;
+        }
+
+        .column {
+            float: left;
+            width: 22.33%;
+            padding: 45px;
+            margin: 10px;
+            align-content: center;
+         
+        }
+.row{
+    align-self: center;
+}
+        /* Clear floats after image containers */
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        figcaption {
+            background-color: black;
+            color: white;
+            font-style: italic;
+            padding: 0.5px;
+            text-align: center;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border-radius: 4px;
+        }
+
+        .button:hover {
+            background-color: #555354;
+            color: white;
+        }
+
+        ul li {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .navtxt {
+            float: left;
+            margin-left: 55%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(141, 67, 54);
+            text-decoration: none;
+            
+        }
+
+        .manage1 {
+            margin-right: 40%;
+        }
+        .bottom-right{
+            border-radius: 15px;
+          
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.bottom-right a img:hover{
+           
+    opacity: -1px;
+    height: 200px;
+    width: 200px;
+}
+   
+        .bottom-right a img{
+            border-radius: 20px;
+            
+        }
+        .logo #mainlogo img{
+            border-radius: 8px;
+
+        }
+        .navcenter li{
+
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <center>
+        <div class="logo">
+            <li id="mainlogo"> <a href="afterlogin.html"><img src="mainlogo.png" alt="" srcset=""></a></li>
+        </div>
+    </center>
+
+        <ul id="partone">
+            
+            <div class="navcenter">
+                <ul id="partone">
+                <li> <a href="afterlogin.html" class="active" style="color: black">Home</a></li>
+                <li> <a href="aboutus.html" class="active" style="color: black">About</a></li>
+                <li> <a href="services.html" class="active" style="color: black">Services</a></li>
+                <li> <a href="contactus.html" class="active" style="color: black">Contact us</a></li>
+                
+                
+            </div>
+        </ul>
+
+        <div class="navtxt">
+            <!-- <input type="search">           <p>Welcome <span id="namehere"></span></p> -->
+        <li> <a href="login.html" class="active" style="color: black">Logout</a></li>
+    </div>
+    </div>
+
+
+
+
+    <div id="sec1">
+        <center>
+            <h1 id=head2 style="color:rgb(12, 12, 12)">Welcome to Medisure</h1>
+        </center>
+        <div class="manage1">
+            <center>
+
+                <h1 style="color:rgb(28, 150, 231);font-family: Times New Roman, Times, serif">High quality medicines
+                    at</br> lowest price</h1>
+                <h2>"The best medicine is the world without any side effect is a smiling face"</h2>
+                <h3 style="font-family: Times New Roman, Times, serif" ;>Healthcare for everyone everywhere</h3>
+                <h3 style="font-family: Times New Roman, Times, serif">Healthcare for every Budget</h3>
+                <h3 style="font-family: Times New Roman, Times, serif">Best consultation</h3>
+                <h3 style="font-family: Times New Roman, Times, serif">Get better healthcare and make your life
+                    beautiful</h3>
+
+
+
+
+                <a href="getappointment.html" style=padding:25px><button class=button type="submit">Make an
+                        Appointment</button></a>
+                <a href="./index2.html" style=padding:25px> <button class=button type="submit">Learn More</button></a>
+            </center>
+
+        </div>
+
+
+    </div>
+
+    <div id="sec2">
+
+        <div>
+            <center>
+                <h1 style="color: rgb(26, 3, 10);">Choose product category</h1>
+            </center>
+        </div>
+
+        <div class="row">
+            <center>
+            <div class="column">
+
+
+                <div class="bottom-right">
+                    <a href="./index2.html"><img src="./ayur" alt="Snow" title="Ayurvedic"
+                            style="width:250px;height:250px;" ></a>
+
+                </div>
+
+            </div>
+            <div class="column">
+
+                <div class="bottom-right">
+                    <a href="./product.html"> <img src="./hm" alt=" " title="Homeopathy"
+                            style="width:250px;height:250px;"></a>
+                </div>
+            </div>
+            <div class="column">
+
+                <div class="bottom-right">
+                    <a href="./product.html"> <img src="./alop" alt="Mountains" title="Allopathy"
+                            style="width:250px;height:250px;"></a>
+                </div>
+            </div>
+        </center>
+        </div>
+
+    
+
+    </div>
+    <footer>
+        <div id="sec3">
+            <div id="logo1">
+                <a href="instagram.com"><img src="instagram.png" alt=""></a>
+            </div>
+            <div id="logo2">
+                <a href="google.com"><img src="whatsapp.png" alt=""></a>
+            </div>
+            <div id="logo3">
+                <a href="faceook.com"><img src="calling.png" alt=""></a>
+            </div>
+        </div>
+        <div class="foottxt">All rigthts are researved <br><span>&#169; samarth peshawar</span></div>
+
+    </footer>
+
+</body>
+
+</html>
